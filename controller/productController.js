@@ -2,7 +2,7 @@ import {Product} from "../model/product.js"
 
 export const createProduct = async(req, res) =>{
     try{
-        const newProduct = new product(req.body);
+        const newProduct = new Product(req.body);
         await newProduct.save();
         res.status(201).json({message: "Product created successfully", newProduct});
     }catch (error){

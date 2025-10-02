@@ -2,7 +2,7 @@ import {User} from "../model/user.js"
 
 export const registerUser = async(req, res) =>{
     try{
-        const user = new user(req.body);
+        const user = new User(req.body);
         await user.save();
         res.status(201).json({message: "User registered successfully", user});
 
