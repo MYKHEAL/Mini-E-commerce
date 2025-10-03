@@ -13,6 +13,10 @@ app.get('/', (req, res) =>{
 
 res.send("E-commerce API is running...");
 });
+app.use("/users", userRoutes);
+app.use("/products", productRoutes);
+app.use("/cart", cartRoutes);
+app.use("/orders", orderRoutes);
 
 //Routes
 import userRoutes from './routes/userRoutes.js';
