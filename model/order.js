@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
-import { User } from "./user";
-import { Product } from "./product";
+
 
 const orderSchema = new mongoose.Schema({
     id: mongoose.Schema.Types.ObjectId,
